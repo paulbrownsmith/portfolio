@@ -1,16 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material';
+import Entry from './components/Entry';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Box>
-          <Typography>Paul Brownsmith</Typography>
-        </Box>
-      </header>
-    </div>
+    <>
+      <Box px={2}>
+        <Entry
+          title="Material UI for protoype and production?"
+          subTitle="subtitle"
+          image="/images/posts/material-ui.png"
+          href="article1"
+        />
+        <Entry
+          title="This is the first entry"
+          subTitle="subtitle again"
+          image="/images/posts/accessibility.png"
+          href="article1"
+        />
+      </Box>
+    </>
   );
 }
 
